@@ -18,7 +18,7 @@ KrokIt Accelerator
 
 ### Webmaster
 **13/04/2019 – 13/08/2021**
-StankoAgregat Ltd. - <kami.by>
+StankoAgregat Ltd. - [kami.by](https://kami.by/)
 - Crearing new web-site features on back-end PHP
 - Changing web-site layout (HTML, CSS, JS, Bootstrap)
 - Creating semantic core for Yandex advertising.
