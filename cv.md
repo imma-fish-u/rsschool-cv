@@ -43,13 +43,11 @@ Belarusian State University of Informatics and Radioelectronics
 
 ### Language skills
 **English** - Results from First Cambridge Exam (B2 level)
-| Part | Level |
-| ------ | ------ |
-| Speaking | C1 |
-| Use of English (Grammar) | C1 |
-| Listening | B2 |
-| Writting | B2 |
-| Reading | B2 |
+1. Speaking - **C1**
+2. Use of English (Grammar) - **C1**
+3. Listening - **B2**
+4. Writting - **B2**
+5. Reading - **B2**
 
 **German & Spanish** - basic knowledge
 
