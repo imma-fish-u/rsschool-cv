@@ -734,7 +734,7 @@ img {
 .footer__logo {
     width: 10rem;
     height: 6rem;
-    background-image: url("/assets/img/rs_school_js.svg");
+    background-image: url("../img/rs_school_js.svg");
     background-repeat: no-repeat;
 }
 
