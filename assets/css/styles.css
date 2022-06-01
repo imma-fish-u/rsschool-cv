@@ -8,7 +8,7 @@
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 14%, 68%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -53,6 +53,7 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
     /* HSL color mode */
+    --first-color-lighter: hsl(var(--hue-color), 40%, 24%);
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -122,7 +123,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .section__title {
@@ -169,7 +170,7 @@ img {
 }
 
 .main {
-    max-width: 1024px;
+    max-width: 1124px;
     margin: 5rem auto;
     margin-top: 2rem;
 }
@@ -324,9 +325,13 @@ img {
     display: inline-block;
     background-color: var(--first-color);
     color: #ffffff;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.8rem;
     font-weight: var(--font-medium);
+}
+
+.button-secondary {
+    background-color: var(--first-color-second);
 }
 
 .button:hover {
@@ -345,6 +350,10 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.about, .video {
+    display: none;
+}
+
 .about__description {
     display: flex;
     margin-bottom: var(--mb-0-75);
@@ -371,8 +380,7 @@ img {
 .skills__header {
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-1-5);
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 1rem;
     cursor: pointer;
     background-color: var(--input-color);
@@ -399,7 +407,7 @@ img {
 
 .skills__list {
     row-gap: 1.5rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
     width: 85vw;
     overflow-x: auto;
 }
@@ -467,7 +475,7 @@ img {
 
 .skills__open .skills__list {
     height: max-content;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-0-5);
 }
 
 .skills__open .skills__arrow {
@@ -496,6 +504,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 568px;
+}
+
+.qualification__content a {
+ text-decoration: underline;   
 }
 
 .qualification__button:last-child {
@@ -614,13 +626,21 @@ img {
 }
 
 .portfolio__content {
-    padding: 0 1.5rem;
+    margin-bottom: var(--mb-1-5);
+    padding: 1.25rem;
+    background-color: var(--container-color);
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    transition: 0.3s;
 }
 
 .portfolio__img {
     width: 265px;
+    height: 100%;
     border-radius: 0.5rem;
     justify-self: center;
+    align-self: center;
+    object-fit: cover;
 }
 
 .portfolio__title {
@@ -631,6 +651,19 @@ img {
 .portfolio__description {
     margin-bottom: var(--mb-0-75);
     line-height: 24px;
+}
+
+.portfolio__labels {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__label {
+    display: inline-block;
+    margin: 0.2rem 0;
+    padding: 0.4rem 1rem;
+    color: var(--first-color);
+    background-color: var(--first-color-lighter);
+    border-radius: 2rem;
 }
 
 .portfolio__button-small:hover .uil-arrow-right {
@@ -879,7 +912,7 @@ img {
 
     .main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 0.8fr 2fr;
         column-gap: 2rem;
     }
 
@@ -892,7 +925,6 @@ img {
     }
 
     .portfolio__container {
-        width: 400px;
         margin: 0 auto;
     }
 
@@ -905,11 +937,8 @@ img {
     .skills__list {
         width: 100%;
     }
-    .portfolio__container {
-        width: 680px;
-    }
     .portfolio__content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 0.7fr 1fr;
     }
 
     .qualification__active[data-content] {
